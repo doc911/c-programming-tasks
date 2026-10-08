@@ -1,85 +1,32 @@
-# C Programming Tasks (Խնդիրների Իրականացում C Լեզվով)
+# C Programming Tasks
 
-Այս ռեպոզիտորիան պարունակում է C ծրագրավորման լեզվով գրված 5 հիմնարար խնդիրների մաքուր և ստանդարտացված իրականացումները։
+Խնդիրների լուծումները C լեզվով։
 
----
+## Tasks
 
-## 📋 Խնդիրների Ցանկ (5 Tasks)
+### 1. Swap two numbers (`01_swap.c`)
+- Ներմուծել երկու ամբողջ թիվ և փոխել դրանց արժեքները երրորդ փոփոխականի միջոցով (temp)։
+- Օրինակ՝ `4 9` -> `9 4`
 
-### 1. `01_sum_two_numbers.c`
-* **Նկարագրություն:** Կարդում է երկու ամբողջ թիվ և տպում դրանց գումարը։
-* **Կոմպիլյացիա:** `gcc -Wall -Wextra 01_sum_two_numbers.c -o 01_sum`
-* **Գործարկում:** `./01_sum`
-* **Օրինակ:**
-  * Մուտք: `5 3`
-  * Ելք: `8`
+### 2. Check whether a number is even or odd (`02_even_odd.c`)
+- Պարզել թիվը զույգ է, թե կենտ (`Even` կամ `Odd`)։
+- Օրինակ՝ `7` -> `Odd`
 
----
+### 3. Check whether a number is divisible by both 3 and 5 (`03_divisible_3_5.c`)
+- Պարզել արդյոք թիվը բաժանվում է 3-ի և 5-ի վրա միաժամանակ (`Yes` կամ `No`)։
+- Օրինակ՝ `30` -> `Yes`
 
-### 2. `02_larger_or_equal.c`
-* **Նկարագրություն:** Կարդում է երկու ամբողջ թիվ և տպում մեծագույնը, կամ `Equal` եթե թվերը հավասար են։
-* **Կոմպիլյացիա:** `gcc -Wall -Wextra 02_larger_or_equal.c -o 02_larger`
-* **Գործարկում:** `./02_larger`
-* **Օրինակ 1:**
-  * Մուտք: `10 20`
-  * Ելք: `20`
-* **Օրինակ 2:**
-  * Մուտք: `15 15`
-  * Ելք: `Equal`
+### 4. Find the last digit of a number (`04_last_digit.c`)
+- Տպել դրական թվի վերջին թվանշանը։
+- Օրինակ՝ `1234` -> `4`
 
----
+### 5. Calculate the sum of the digits of a three-digit number (`05_sum_of_digits.c`)
+- Հաշվել դրական եռանիշ թվի թվանշանների գումարը։
+- Օրինակ՝ `352` -> `10`
 
-### 3. `03_max_of_three.c` (Գրատախտակի Խնդիրը)
-* **Նկարագրություն:** Կարդում է երեք ամբողջ թիվ և տպում դրանցից ամենամեծը (Maximum)։
-* **Տրամաբանություն:**
-  ```c
-  int max = a;
-  if (b > max) {
-      max = b;
-  }
-  if (c > max) {
-      max = c;
-  }
-  printf("%d\n", max);
-  ```
-* **Կոմպիլյացիա:** `gcc -Wall -Wextra 03_max_of_three.c -o 03_max`
-* **Գործարկում:** `./03_max`
-* **Օրինակ (Գրատախտակի արժեքները):**
-  * Մուտք: `12 14 16`
-  * Ելք: `16`
-
----
-
-### 4. `04_even_or_odd.c`
-* **Նկարագրություն:** Կարդում է ամբողջ թիվ և պարզում՝ այն զույգ է (Even), թե կենտ (Odd)՝ օգտագործելով `% 2` մնացորդի գործողությունը։
-* **Կոմպիլյացիա:** `gcc -Wall -Wextra 04_even_or_odd.c -o 04_even_odd`
-* **Գործարկում:** `./04_even_odd`
-* **Օրինակ 1:**
-  * Մուտք: `8`
-  * Ելք: `Even`
-* **Օրինակ 2:**
-  * Մուտք: `7`
-  * Ելք: `Odd`
-
----
-
-### 5. `05_positive_negative_zero.c`
-* **Նկարագրություն:** Կարդում է ամբողջ թիվ և որոշում՝ այն դրական է (`Positive`), բացասական (`Negative`), թե զրո (`Zero`)։
-* **Կոմպիլյացիա:** `gcc -Wall -Wextra 05_positive_negative_zero.c -o 05_sign`
-* **Գործարկում:** `./05_sign`
-* **Օրինակներ:**
-  * `5` ➔ `Positive`
-  * `-9` ➔ `Negative`
-  * `0` ➔ `Zero`
-
----
-
-## 🛠️ Ինչպես կոմպիլյացնել բոլորը միանգամից (Build All)
+## Compile & Run
 
 ```bash
-gcc -Wall -Wextra 01_sum_two_numbers.c -o 01_sum
-gcc -Wall -Wextra 02_larger_or_equal.c -o 02_larger
-gcc -Wall -Wextra 03_max_of_three.c -o 03_max
-gcc -Wall -Wextra 04_even_or_odd.c -o 04_even_odd
-gcc -Wall -Wextra 05_positive_negative_zero.c -o 05_sign
+gcc 01_swap.c -o 01_swap
+./01_swap
 ```
