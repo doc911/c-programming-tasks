@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int n, d;
 
     scanf("%d", &n);
 
-    int last_digit = n % 10;
+    d = n % 10;
 
-    printf("%d\n", last_digit);
+    printf("%d\n", d);
 
     return 0;
 }
