@@ -1,13 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int num, digit;
+    int a;
 
-    scanf("%d", &num);
+    scanf("%d", &a);
 
-    digit = num % 10;
-
-    printf("%d\n", digit);
+    printf("%d\n", a % 10);
 
     return 0;
 }
