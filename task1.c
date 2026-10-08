@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int a, b, temp;
+    int a, b, c;
 
     scanf("%d %d", &a, &b);
 
-    temp = a;
+    c = a;
     a = b;
-    b = temp;
+    b = c;
 
     printf("%d %d\n", a, b);
 

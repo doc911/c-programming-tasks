@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int n, a, b, c, sum;
+    int n, a, b, c, s;
 
     scanf("%d", &n);
 
@@ -9,9 +9,9 @@ int main() {
     b = (n / 10) % 10;
     c = n % 10;
 
-    sum = a + b + c;
+    s = a + b + c;
 
-    printf("%d\n", sum);
+    printf("%d\n", s);
 
     return 0;
 }
