@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int num;
 
-    scanf("%d", &n);
+    scanf("%d", &num);
 
-    if (n % 3 == 0 && n % 5 == 0) {
+    if (num % 3 == 0 && num % 5 == 0) {
         printf("Yes\n");
     } else {
         printf("No\n");

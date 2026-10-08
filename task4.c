@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int n, d;
+    int num, digit;
 
-    scanf("%d", &n);
+    scanf("%d", &num);
 
-    d = n % 10;
+    digit = num % 10;
 
-    printf("%d\n", d);
+    printf("%d\n", digit);
 
     return 0;
 }

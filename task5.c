@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    int n, a, b, c, s;
+    int num, a, b, c, sum;
 
-    scanf("%d", &n);
+    scanf("%d", &num);
 
-    a = n / 100;
-    b = (n / 10) % 10;
-    c = n % 10;
+    a = num / 100;
+    b = (num / 10) % 10;
+    c = num % 10;
 
-    s = a + b + c;
+    sum = a + b + c;
 
-    printf("%d\n", s);
+    printf("%d\n", sum);
 
     return 0;
 }
